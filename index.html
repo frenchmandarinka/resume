@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="keywords" content="html, cv,">
+  <meta name="description" content="Это сайт-резюме Olesia Grigoreva">
+  <title>Olesia Grigoreva CV</title>
+</head>
+
+<body>
+  <header>
+    <nav id="menu">
+      <!-- id должен быть уникальный, и не дублироваться в html-файле.class может быть несколько в док-те -->
+      <ul>
+        <li><a href="#">Contact details</a></li>
+        <li><a href="#">About me</a></li>
+        <li><a href="#">Work experience</a></li>
+        <li><a href="#">Skills</a></li>
+      </ul>
+      <h2>Olesia Grigoreva</h2>
+      <p>olesja.sasha18@gmail.com</p>
+      <p>+38267160378</p>
+      <img src="my-picture.jpg" alt="my photo" width="200">
+      <h4>Мои социальные сети:</h4>
+      <a href="https://www.linkedin.com/in/olesia-grigoreva-3b63b8114/" target="blank">My Linkedin page</a>
+      |
+      <a href="https://github.com/frenchmandarinka" target="_blank">My GitHub</a>
+    </nav>
+  </header>
+  <hr>
+
+  <main>
+    <p>I am <strong>junior web-developer</strong>. Passionate about code.</p>
+
+    <section>
+      <article>
+        <h2>About me</h2>
+        <p>I'm studying <em><strong>HTML and CSS</strong></em> at the moment and practice a lot. <br> I understand
+          basics of HTML, tags and its attributes, semantiс markup.
+        </p>
+      </article>
+    </section>
+
+    <section>
+      <h2>Skills and abilities</h2>
+      <ul type="disc">
+        <!-- лучше через css -->
+        <li>
+          HTML
+          <ul>
+            <li>tags and their attributes</li>
+            <li>semantic markup</li>
+            <li>Emmet</li>
+          </ul>
+        </li>
+        <li>CSS</li>
+        <li>basic JavaScript</li>
+        <li>GitHub</li>
+        <li>basic DevTools understanding</li>
+        <li>English. Indermediate+</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>Work experience</h2>
+      <table>
+        <thead>
+          <tr>
+            <th>Company</th>
+            <th>Position</th>
+            <th>Period</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>TLS translation agency</td>
+            <td>Translator</td>
+            <td>2019-2022</td>
+          </tr>
+          <tr>
+            <td>AZ-Studio</td>
+            <td>Copywriter</td>
+            <td>2021</td>
+          </tr>
+          <tr>
+            <td>Metion Visa</td>
+            <td>Office manager</td>
+            <td>2016-2020</td>
+          </tr>
+        </tbody>
+        <tfoot></tfoot>
+        <!-- обычно ее не используют -->
+      </table>
+    </section>
+
+    <section>
+      <h2>Study</h2>
+      <ol>
+        <li>You-tube channels: Result School, Ann Block, Coder Coder</li>
+        <li>Habr articles</li>
+        <li>Mdn documentation</li>
+      </ol>
+    </section>
+  </main>
+  <h2>Связаться со мной</h2>
+  <form>
+    <div>
+      <label for="text">Your name:</label>
+      <input type="text" id="text" placeholder="Enter your name">
+    </div>
+
+    <div>
+      <label for="email">Your email:</label>
+      <input type="email" id="email" placeholder="Enter your email">
+    </div>
+
+    <div>
+      <label for="message">Your message:</label>
+      <br>
+      <textarea id="message" placeholder="Enter your message here" cols="32" rows="10"></textarea>
+    </div>
+
+    <div>
+      <!-- <button type="submit">Send!</button> -->
+      <input type="submit" value="Send!">
+    </div>
+
+  </form>
+
+  <!-- <form>
+
+    <div>
+      <label for="text">Текст</label>
+      <input type="text" id="text" value="text by default" readonly>
+    </div>
+    // <!-- label for и id связаны, эти атрибуты совпдают, и если нажать на название label? то курсор автоматически ставится в поле ввода input //
+
+    <div>
+      <label for="email">Email</label>
+      <input type="email" id="email" placeholder="Enter email">
+    </div>
+
+    <div>
+      <label for="password">Password</label>
+      <input type="password" id="password">
+    </div>
+
+    <div>
+      <label for="number">Number</label>
+      <input type="number" id="number" max="5">
+    </div>
+
+    <div>
+      <label for="range">Range</label>
+      <input type="range" id="range" min="0" max="10" step="1">
+    </div>
+
+    <div>
+      <label for="date">Date</label>
+      <input type="date" id="date">
+    </div>
+
+    <div>
+      <label for="color">Color</label>
+      <input type="color" id="color">
+    </div>
+
+    <div>
+      <label for="message">Message</label>
+      <textarea id="message" cols="30" rows="10"></textarea>
+    </div>
+
+    <div>
+      <label for="sex">Your sex</label>
+      <select id="sex">
+        <option value="male">Male</option>
+        <option value="female" selected>Female</option>
+        <option value="other">Other</option>
+      </select>
+    </div>
+
+    <div>
+      <label>Number of works</label>
+      <input type="radio" name="work"> 1
+      <input type="radio" name="work"> 2
+      <input type="radio" name="work"> 5
+      <input type="radio" name="work"> 10+
+    </div>
+
+    <div>
+      <label>favorite food</label>
+      <input type="checkbox" name="food"> potato
+      <input type="checkbox" name="food"> apple
+      <input type="checkbox" name="food"> strawberry
+      <input type="checkbox" name="food"> bread
+    </div>
+
+    <input type="submit" value="Send the form">
+    <button type="submit">Отправить</button>
+  </form> -->
+
+</body>
+
+
+<footer>
+  Made by Olesia Grigoreva, Montenegro, 2023
+
+</footer>
+
+</html>

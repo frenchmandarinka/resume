@@ -1,0 +1,396 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* обращается ко всем элементам на стр  */
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+
+
+
+/* tag name */
+body {
+  /* font-family: Verdana, Geneva, sans-serif; */
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  line-height: 1.6em;
+  /* font: normal, 25px, 'Roboto', sans-serif; */
+  font-weight: normal;
+  color: #0f141e;
+  background: #f1f1f1;
+  /* text-decoration: line-through; */
+  /* font-style: italic;
+  letter-spacing: 2px;
+  word-spacing: 3px; */
+  margin: 0;
+}
+
+
+
+.container {
+  max-width: 750px;
+  margin: auto;
+  /* margin: 50px; */
+  padding-top: 30px;
+}
+
+.avatar {
+  width: 200;
+  border-radius: 15px;
+  box-shadow: 15px 14px 14px rgba(0, 0, 0, 0.25)
+}
+
+.box {
+  background: darkmagenta;
+  color: white;
+  /* padding: 15px 40px 25px 30px; */
+  /* внутренний отступ до самого контента */
+  /* top right bottom left  */
+  /* padding: 15px 40px; */
+  /* padding-top: 15px;
+  padding-right: 40px;
+  padding-bottom: 25px;
+  padding-left: 30px; */
+  padding: 15px;
+  border: 4px solid red;
+  margin: 10px;
+  /* внешние отступы от границ то же самое что и padding*/
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.list li {
+  list-style: disc;
+  margin-bottom: 10px;
+}
+
+.table {
+  width: 100%;
+}
+
+.table td {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.table td:hover {
+  background: #eeefff;
+}
+
+/* есть спец псевдоселекторы, когда перечисление */
+/* .table tr:nth-child(even) {
+  background: #eee;
+} */
+
+.table tr:nth-child(odd) {
+  background: #eee;
+}
+
+.table td:nth-child(2),
+.table td:nth-child(4) {
+  background: #ffeeee;
+}
+
+.navbar {
+  background: lightcoral;
+  /* padding: 10px 20px; */
+  margin-bottom: 10px;
+}
+
+.navbar ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  padding: 0 20px;
+}
+
+.navbar ul li {
+  margin-right: 10px;
+  padding: 10px;
+}
+
+.navbar ul li:hover {
+  background: #ea6767;
+}
+
+.navbar ul li:last-child {
+  margin-right: 0;
+}
+
+
+.blocks {
+  width: 100%;
+}
+
+.blocks .block {
+  width: 25%;
+  background: black;
+  height: 50px;
+  /* float: left; */
+  /* можно выстраивать элементы в линию но это плохой способ не надо так*/
+  border: 4px solid green;
+  box-sizing: border-box;
+  /* как бы переписываем поведение по умолчанию, границу будто бы надо добавить в размерность самого элемента */
+}
+
+
+/* .css p {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 20px;
+  font-weight: bold;
+} */
+
+/* class */
+.card {
+  border-radius: 20px;
+  padding: 15px 20px;
+  margin-bottom: 20px;
+  /* считается хорошим вкусом использовать margin-botton, не исп-ть margin-top */
+
+}
+
+a {
+  color: #333;
+  text-decoration: none;
+  /* transition: all .2s; */
+  /* плавная анимация */
+}
+
+/* псевдоселектор
+hover может не только для ссылок, */
+a:hover {
+  text-decoration: underline;
+  font-size: 1rem;
+  /* / значение задается от корневого элемента, типа того размера который был в body / */
+}
+
+a:active {
+  color: blue;
+}
+
+/* только для ссылок */
+a:visited {
+  color: red
+}
+
+/* .card:hover {
+  background: red;
+} */
+
+.btn {
+  background: #111;
+  padding: 5px 10px;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: inherit;
+}
+
+.btn:hover {
+  opacity: 0.8;
+}
+
+
+.info {
+  margin-bottom: 20px;
+}
+
+.info-text {
+  margin-left: 40px;
+  display: flex;
+}
+
+.list {
+  list-style-type: upper-latin;
+}
+
+.info-text p {
+  font-style: italic;
+  font-weight: bold;
+  color: #86898f;
+  margin: 0;
+}
+
+h1 {
+  color: black;
+  margin: auto;
+}
+
+.info-text h4 {
+  margin-bottom: 2px;
+}
+
+.bg-1 {
+  background-color: #ff7;
+}
+
+.bg-2 {
+  background-color: #37a;
+}
+
+.card h2 {
+  font-size: 30px;
+}
+
+.html {
+  background: orange;
+  color: white;
+}
+
+.css {
+  background: blue;
+  color: white;
+}
+
+/* id */
+#header {
+  background: #ddd;
+  padding: 10px;
+}
+
+#header,
+.html,
+.css {
+  margin-bottom: 10px;
+}
+
+
+/* inline, block, inline-block */
+.inline li {
+  display: inline;
+}
+
+/* по умолчанию каждый li - блочный элемент, но если просто написать в css display: block,
+ то потеряются точки, которые делают список. для элементов списка по умолчанию
+ стоит блочный дисплей, но в знач display: list-item? от самого браузера (видно в Devtools),
+ когда пишем dislay: inline, мы все переписываем */
+
+.boxx {
+  width: 32%;
+  border: 1px solid black;
+  background: #f4f4f4;
+  display: inline-block;
+  box-sizing: border-box;
+}
+
+.imge {
+  width: 200px;
+  /* inline-элементу нельзя задавать margin/ чтобы это изменить,
+  надо задать display: block? и потмо уже менять его поведение и рапсоложение на стр */
+  display: block;
+  margin: 40px auto;
+}
+
+.form h2 {
+  text-align: center;
+}
+
+.form-row {
+  display: flex;
+}
+
+.form-row .form-group {
+  /* display: inline-block; */
+  margin-right: 20px;
+  width: 50%;
+  /* width: calc(50% - 20px); */
+}
+
+.form-row .form-group:last-child {
+  margin-right: 0;
+}
+
+.form-group label {
+  display: block;
+  /* по умолчанию label это inline элемент, поэтому меняем  */
+  font-size: 14px;
+  color: #86898f;
+}
+
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  box-sizing: border-box;
+  border: none;
+  background: transparent;
+  border-bottom: 1px solid #ccc;
+  color: #000;
+  padding: 15px 0 10px;
+  outline: none;
+  font-family: inherit;
+}
+
+.playground {
+  position: relative;
+  border: 4px solid black;
+  height: 300px;
+  padding: 20px;
+}
+
+.pos-box {
+  /* position: static; */
+  position: absolute;
+  /* absolute это наверно для менюшки которая всегда остается наверху стр при листании */
+  /* left right top bottom */
+  /* top: 0; */
+  /* left: 0; */
+  /* bottom: 200;
+  right: 0; */
+  top: 0;
+  width: 50px;
+  height: 50px;
+  background: lightgreen;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+/* такой navbar это типа закрепленная наеврху менюшка которая будет всегда с тобйо ездить, и при этом не будет перекрываться другими секциями */
+
+#header {
+  margin-top: 50px;
+}
+
+.containerrr {
+  max-width: 750px;
+  padding-top: 20px;
+  margin: auto;
+}
+
+.boxxx {
+  padding: 20px;
+  background: #eee;
+  font-size: 2rem;
+}
+
+@media (max-width: 650px) {
+  .info-text {
+    display: block;
+    text-align: center;
+  }
+}
+
+@media(max-width: 650px) {
+  .form-row {
+    display: block;
+  }
+
+  .form-row .form-group {
+    width: 100%;
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
+}

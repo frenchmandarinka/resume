@@ -8,128 +8,308 @@
   <meta name="keywords" content="html, cv,">
   <meta name="description" content="Это сайт-резюме Olesia Grigoreva">
   <title>Olesia Grigoreva CV</title>
+  <style>
+    body {
+      background: #eee;
+    }
+
+    header {
+      border: 1px solid grey;
+    }
+
+    @media (max-width: 500px) {
+      .boxxx {
+        font-size: 1rem;
+        padding: 10px;
+        text-align: center;
+      }
+    }
+    }
+  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-  <header>
-    <nav id="menu">
-      <!-- id должен быть уникальный, и не дублироваться в html-файле.class может быть несколько в док-те -->
+  <header id="header">
+    <!-- id должен быть уникальный, и не дублироваться в html-файле.class может быть несколько в док-те -->
+
+    <nav class="navbar">
       <ul>
-        <li><a href="#">Contact details</a></li>
         <li><a href="#">About me</a></li>
-        <li><a href="#">Work experience</a></li>
         <li><a href="#">Skills</a></li>
+        <li><a href="#">Work experience</a></li>
+        <li><a href="#">Study</a></li>
+        <li><a href="#">Contact details</a></li>
       </ul>
-      <h2>Olesia Grigoreva</h2>
+    </nav>
+
+
+    <h1>Olesia Grigoreva</h1>
+
+    <div class="info-text">
+      <img src="my-picture.jpg" alt="my photo" class="avatar">
+      <p>I am <strong>junior web-developer</strong>. Passionate about code.</p>
       <p>olesja.sasha18@gmail.com</p>
       <p>+38267160378</p>
-      <img src="my-picture.jpg" alt="my photo" width="200">
       <h4>Мои социальные сети:</h4>
-      <a href="https://www.linkedin.com/in/olesia-grigoreva-3b63b8114/" target="blank">My Linkedin page</a>
+      <a href="https://www.linkedin.com/in/olesia-grigoreva-3b63b8114/" class="btn" target="blank">My Linkedin
+        page</a>
       |
-      <a href="https://github.com/frenchmandarinka" target="_blank">My GitHub</a>
-    </nav>
+      <a href="https://github.com/frenchmandarinka" class="btn" target="_blank">My GitHub</a>
+    </div>
   </header>
   <hr>
 
   <main>
-    <p>I am <strong>junior web-developer</strong>. Passionate about code.</p>
+    <div class="containerrr">
+      <div class="boxxx">
+        Это урок про адаптивную верстку
+      </div>
+    </div>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
 
-    <section>
-      <article>
-        <h2>About me</h2>
-        <p>I'm studying <em><strong>HTML and CSS</strong></em> at the moment and practice a lot. <br> I understand
-          basics of HTML, tags and its attributes, semantiс markup.
-        </p>
-      </article>
-    </section>
-
-    <section>
-      <h2>Skills and abilities</h2>
-      <ul type="disc">
-        <!-- лучше через css -->
-        <li>
-          HTML
-          <ul>
-            <li>tags and their attributes</li>
-            <li>semantic markup</li>
-            <li>Emmet</li>
-          </ul>
-        </li>
-        <li>CSS</li>
-        <li>basic JavaScript</li>
-        <li>GitHub</li>
-        <li>basic DevTools understanding</li>
-        <li>English. Indermediate+</li>
+    <div class="cardd">
+      <h2>Display</h2>
+      <ul class="inline">
+        <li>Item1</li>
+        <li>Item2</li>
+        <li>Item3</li>
+        <li>Item4</li>
       </ul>
-    </section>
 
-    <section>
-      <h2>Work experience</h2>
-      <table>
-        <thead>
-          <tr>
-            <th>Company</th>
-            <th>Position</th>
-            <th>Period</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>TLS translation agency</td>
-            <td>Translator</td>
-            <td>2019-2022</td>
-          </tr>
-          <tr>
-            <td>AZ-Studio</td>
-            <td>Copywriter</td>
-            <td>2021</td>
-          </tr>
-          <tr>
-            <td>Metion Visa</td>
-            <td>Office manager</td>
-            <td>2016-2020</td>
-          </tr>
-        </tbody>
-        <tfoot></tfoot>
-        <!-- обычно ее не используют -->
+      <div class="boxx">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, ducimus.
+      </div>
+      <div class="boxx">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, ducimus.
+      </div>
+      <div class="boxx">
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Obcaecati, ducimus.
+      </div>
+      <img src="https://www.freecodecamp.org/news/content/images/2021/08/html.png" alt="HTML" class="imge">
+    </div>
+
+    <div class="card">
+      <h2>Positions</h2>
+      <div class="playground">
+        <div class="pos-box"></div>
+      </div>
+    </div>
+
+
+    <div class="card">
+      <h2>Lists & Tables</h2>
+
+      <ul class="list">
+        <li>Lorem, ipsum.</li>
+        <li>Provident, ab!</li>
+        <li>Dolorem, maiores.</li>
+        <li>Facere, inventore!</li>
+        <li>Deserunt, minus.</li>
+      </ul>
+
+      <table class="table">
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+          <td>4</td>
+          <td>5</td>
+        </tr>
       </table>
-    </section>
 
-    <section>
-      <h2>Study</h2>
-      <ol>
-        <li>You-tube channels: Result School, Ann Block, Coder Coder</li>
-        <li>Habr articles</li>
-        <li>Mdn documentation</li>
-      </ol>
-    </section>
+    </div>
+
+
+    <div class="container">
+      <div class="box">
+        <h2>Box Model</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, similique.</p>
+      </div>
+
+      <div class="box">
+        <h2>Box Model</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti, similique.</p>
+      </div>
+
+      <div class="card">
+        <h2>Links & buttons</h2>
+        <p>
+          <a href="#" class="btn">Very important link</a>
+        </p>
+
+        <p>
+          <button class="btn">This is button!</button>
+        </p>
+      </div>
+
+
+      <div class="blocks">
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+        <div class="block"></div>
+      </div>
+
+      <p class="text">HTML</p>
+      <p class="text">CSS</p>
+
+
+
+
+      <section>
+        <article class="card">
+          <h2>About me</h2>
+          <p>I'm studying <em><strong>HTML and CSS</strong></em> at the moment and practice a lot. <br> I understand
+            basics of HTML, tags and its attributes, semantiс markup.
+          </p>
+        </article>
+      </section>
+
+      <section class="card bg-1">
+        <h2>Skills and abilities</h2>
+        <br>
+        <ul class="list">
+          <!-- лучше через css -->
+          <li>
+            HTML
+            <!-- <ul>
+              <li>tags and their attributes</li>
+              <li>semantic markup</li>
+              <li>Emmet</li>
+            </ul> -->
+          </li>
+          <li>CSS</li>
+          <li>basic JavaScript, Vue.js</li>
+          <li>VS Code</li>
+          <li>GitHub</li>
+          <li>DevTools</li>
+          <li>SQL, MySQL</li>
+          <li>English: Indermediate+</li>
+        </ul>
+      </section>
+
+      <section class="card bg-2">
+        <h2>Work experience</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Company</th>
+              <th>Position</th>
+              <th>Period</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>TLS translation agency</td>
+              <td>Translator</td>
+              <td>2019-2022</td>
+            </tr>
+            <tr>
+              <td>AZ-Studio</td>
+              <td>Copywriter</td>
+              <td>2021</td>
+            </tr>
+            <tr>
+              <td>Metion Visa</td>
+              <td>Office manager</td>
+              <td>2016-2020</td>
+            </tr>
+          </tbody>
+          <tfoot></tfoot>
+          <!-- обычно ее не используют -->
+        </table>
+      </section>
+
+      <section class="card">
+        <h2>Study</h2>
+        <ol>
+          <li>You-tube channels: Result School, Ann Block, Coder Coder</li>
+          <li>Habr articles</li>
+          <li>Mdn documentation</li>
+        </ol>
+      </section>
   </main>
-  <h2>Связаться со мной</h2>
-  <form>
-    <div>
-      <label for="text">Your name:</label>
-      <input type="text" id="text" placeholder="Enter your name">
+  <form class="form">
+    <h2>Связаться со мной</h2>
+    <div class="form-row">
+
+      <div class="form-group">
+        <label for="text">Your name:</label>
+        <input type="text" id="text" placeholder="Enter your name">
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your email:</label>
+        <input type="email" id="email" placeholder="Enter your email">
+      </div>
     </div>
 
-    <div>
-      <label for="email">Your email:</label>
-      <input type="email" id="email" placeholder="Enter your email">
-    </div>
-
-    <div>
+    <div class="form-group">
       <label for="message">Your message:</label>
-      <br>
       <textarea id="message" placeholder="Enter your message here" cols="32" rows="10"></textarea>
     </div>
 
     <div>
       <!-- <button type="submit">Send!</button> -->
-      <input type="submit" value="Send!">
+      <input type="submit" value="Send!" class="btn">
     </div>
 
   </form>
-
+  </div>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
   <!-- <form>
 
     <div>
